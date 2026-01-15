@@ -5,7 +5,8 @@ import { Search, Bell, User } from "lucide-react"
 export function Header({ title }: { title: string }) {
   return (
     <header className="fixed top-0 left-16 right-0 h-16 bg-background/80 backdrop-blur-lg border-b border-border flex items-center justify-between px-8 z-40">
-      <h1 className="text-2xl font-bold text-foreground glow-cyan">{title}</h1>
+      {/* removed glow-cyan */}
+      <h1 className="text-2xl font-bold text-foreground ">{title}</h1>
 
       <div className="flex items-center gap-6">
         <div className="relative hidden md:block">
